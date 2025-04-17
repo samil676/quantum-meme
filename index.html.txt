@@ -1,0 +1,64 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { FaTwitter, FaDiscord, FaTelegramPlane } from "react-icons/fa";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-black text-white px-6 py-10 font-sans">
+      <section className="text-center mb-16">
+        <h1 className="text-5xl font-bold mb-4 text-purple-400 animate-pulse">
+          The Quantum Era begins... with a monkey.
+        </h1>
+        <p className="text-xl text-gray-300 mb-6">
+          Welcome to <span className="text-yellow-400 font-bold">Quantum Hub Coin (QHC)</span>
+        </p>
+        <Button className="bg-purple-600 hover:bg-purple-800 text-white px-6 py-3 text-lg rounded-xl">
+          Buy on Pump.fun
+        </Button>
+      </section>
+
+      <section className="grid md:grid-cols-2 gap-10 mb-16">
+        <Card className="bg-gray-900 border-purple-600">
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-bold mb-2 text-purple-400">What is QHC?</h2>
+            <p className="text-gray-300">
+              QHC is a meme-powered quantum movement. Inspired by the origins of humanity,
+              we blend AI, quantum vibes, and the spirit of the monkey to launch a new era.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gray-900 border-yellow-500">
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-bold mb-2 text-yellow-400">Tokenomics</h2>
+            <p className="text-gray-300">
+              - Total Supply: ∞ (Infinite possibilities)<br/>
+              - Community Driven & Meme-Powered<br/>
+              - 100% On-chain on Solana
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="text-center mb-20">
+        <h2 className="text-3xl font-bold text-purple-300 mb-4">Join the Quantum Memevolution</h2>
+        <div className="flex justify-center gap-6 text-3xl">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600">
+            <FaTwitter />
+          </a>
+          <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-indigo-600">
+            <FaDiscord />
+          </a>
+          <a href="https://t.me" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-600">
+            <FaTelegramPlane />
+          </a>
+        </div>
+      </section>
+
+      <footer className="text-center text-gray-500 text-sm">
+        © 2025 Quantum Hub Coin (QHC) - Meme meets Quantum.
+      </footer>
+    </main>
+  );
+}
